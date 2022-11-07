@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid black;
+    list-style: none;
+}
+
+.wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas:
+      "navbar header header header"
+      "navbar main main main"
+      "navbar main main main"
+      "navbar main main main"
+}
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.header .search-bar {
+    grid-column: span 2;
+}
+
+.nav-bar {
+    grid-area: navbar;
+    display: grid;
+    grid-template-rows: 1fr 4fr 4fr;
+    background-color: #0ea5e9;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main-content {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.projects {
+    grid-area: span 2;
+}
