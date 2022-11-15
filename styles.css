@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     border: 1px solid black;
     list-style: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 .wrapper {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto 4fr;
     grid-template-areas:
       "navbar header header header"
       "navbar main main main"
@@ -22,14 +26,10 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.header .search-bar {
-    grid-column: span 2;
-}
-
 .nav-bar {
     grid-area: navbar;
     display: grid;
-    grid-template-rows: 1fr 4fr 4fr;
+    grid-template-rows: auto 4fr 4fr;
     background-color: #0ea5e9;
     color: #fff;
 }
@@ -37,6 +37,32 @@
 .logo {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.logo > img {
+    height: 3rem;
+    filter: invert();
+}
+
+.nav > ul,
+.options > ul {
+    padding: 0;
+}
+
+.nav > ul > li,
+.options > ul > li {
+    display: flex;
+    font-weight: bolder;
+    padding: .75rem;
+    gap: 1rem;
+}
+
+li > img {
+    filter: invert();
+    height: 1rem;
 }
 
 .main-content {
