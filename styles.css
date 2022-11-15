@@ -20,12 +20,14 @@
       "navbar main main main"
 }
 
+/* header */
 .header {
     grid-area: header;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
+/* nav bar */
 .nav-bar {
     grid-area: navbar;
     display: grid;
@@ -36,7 +38,6 @@
 
 .logo {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     gap: 1rem;
     padding: 1rem;
@@ -56,15 +57,17 @@
 .options > ul > li {
     display: flex;
     font-weight: bolder;
-    padding: .75rem;
+    padding: 1rem;
     gap: 1rem;
 }
 
 li > img {
     filter: invert();
-    height: 1rem;
+    height: 1.5rem;
+    padding-left: .5rem;
 }
 
+/* main */
 .main-content {
     grid-area: main;
     display: grid;
@@ -73,4 +76,31 @@ li > img {
 
 .projects {
     grid-area: span 2;
+    display: grid;
+    grid-template: auto repeat(3, 1fr) / 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.projects > div {
+    border-radius: 10px;
+    display: grid;
+    padding: 1rem;
+    grid-template-rows: auto 1fr auto;
+}
+
+.projects div[class="icons"] {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    flex-basis: auto;
+}
+
+.projects div[class="icons"] > img {
+    height: 1.5rem;
+}
+
+.projects h2 {
+    grid-column: span 2;
+    align-self: end;
 }
