@@ -118,7 +118,7 @@ h2 {
     padding: .5rem 1rem;
     border-radius: 25px;
     border: none;
-    background-color: #0ea5e9;
+    background-color: #fdba74;
     color: #fff;
     font-weight: bolder;
 }
@@ -128,7 +128,7 @@ h2 {
     grid-area: navbar;
     display: grid;
     grid-template-rows: auto auto 4fr;
-    background-color: #0ea5e9;
+    background-color: #fdba74;
     color: #fff;
 }
 
