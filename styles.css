@@ -75,13 +75,14 @@ h2 {
 }
 
 .icons img:first-child {
-    height: 1.5rem;
+    height: 1.25rem;
     align-self: center;
     justify-self: end;
 }
 
 .icons>img+img {
-    height: 2.5rem;
+    height: 2.75rem;
+    width: 2.75rem;
     align-self: center;
     border-radius: 50%;
 }
@@ -253,7 +254,7 @@ li>img {
 }
 
 .announcements h3:only-of-type {
-    font-size: 1em;
+    font-size: .95em;
 }
 
 .announcements p {
@@ -292,7 +293,7 @@ li>img {
     border-radius: 10px;
     padding: 1.5rem 2rem;
     background-color: #fff;
-    gap: 2rem;
+    gap: 1rem;
     font-size: .85rem;
     box-shadow: 2px 3px 5px rgba(192, 185, 185, 0.5);
 }
@@ -306,8 +307,19 @@ li>img {
 }
 
 .trending img {
-    height: 2rem;
+    height: 2.75rem;
+    width: 2.75rem;
     align-self: center;
+}
+
+.trending >div img:nth-of-type(2n+1) {
+    border-radius: 50%;
+    border: 1px solid #fdba74;
+    padding: .1rem;
+}
+
+.trending >div img:nth-of-type(2n+2) {
+    border-radius: 50%;
 }
 
 div p[class]+p {
